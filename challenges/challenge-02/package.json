@@ -4,7 +4,6 @@
   "description": "Reto #2: 🏭 Ponemos en marcha la fábrica",
   "main": "manufacture.js",
   "scripts": {
-    "prod": "node manufacture.js",
     "test": "jest"
   },
   "keywords": [

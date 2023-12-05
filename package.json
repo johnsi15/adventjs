@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "¡Celebra la temporada navideña con código! 🎄✨ Participa en AdventJS y enfrenta un desafío de programación diario durante los primeros 25 días de diciembre. Resuelve retos de programación y gana puntos, ¡descubre regalos especiales! 🚀👩‍💻👨‍💻",
   "main": "index.js",
+  "type": "module",
   "workspaces": [
     "challenges/*"
   ],

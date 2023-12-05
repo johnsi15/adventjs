@@ -4,7 +4,6 @@
   "description": "Reto #1: 🎁 ¡Primer regalo repetido!",
   "main": "gifts.js",
   "scripts": {
-    "prod": "node gifts.js",
     "test": "jest"
   },
   "keywords": [
