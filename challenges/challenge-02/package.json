@@ -1,10 +1,10 @@
 {
-  "name": "challenge-01",
+  "name": "challenge-02",
   "version": "1.0.0",
-  "description": "Reto #1: 🎁 ¡Primer regalo repetido!",
-  "main": "gifts.js",
+  "description": "Reto #2: 🏭 Ponemos en marcha la fábrica",
+  "main": "manufacture.js",
   "scripts": {
-    "prod": "node gifts.js",
+    "prod": "node manufacture.js",
     "test": "jest"
   },
   "keywords": [

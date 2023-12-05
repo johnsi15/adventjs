@@ -4,6 +4,8 @@
 
 [AdventJS](https://adventjs.dev) Este emocionante proyecto ofrece una experiencia única durante los primeros 25 días de diciembre, brindando a los entusiastas de la programación la oportunidad de participar en desafíos diarios llenos de lógica y creatividad. Cada día será revelado un nuevo rompecabezas de programación, desafiando a los desarrolladores a demostrar sus habilidades en JavaScript o TypeScript.
 
+Todas las soluciones que he desarrollado incluyen sus correspondientes test.
+
 ## Retos
 
 | Día | Reto                                                                                     | Código                           |                                                                                                                                        | Puntos |
