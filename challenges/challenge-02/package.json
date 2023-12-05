@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Reto #2: 🏭 Ponemos en marcha la fábrica",
   "main": "manufacture.js",
+  "type": "module",
   "scripts": {
+    "prod": "node manufacture.js",
     "test": "jest"
   },
   "keywords": [
