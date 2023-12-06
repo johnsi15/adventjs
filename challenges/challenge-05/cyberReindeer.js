@@ -1,80 +1,78 @@
 export function cyberReindeer(road, time) {
   const result = []
+  let stop = false
   let count = 0
-  let count2 = 0
-  let count3 = 0
-  let camino = road.split('')
   for (let i = 0; i <= time; i++) {
     if (i === 0) {
       result.push(road)
     }
 
-    if (i === 3 || i === 4) {
-      result.push(camino.join(''))
+    let currentPosition = road.indexOf('S')
+    // console.log({ currentPosition })
+    let newPosition = currentPosition + 1
+    const nextDot = road.indexOf('.', newPosition)
+
+    const barrera = road.indexOf('|')
+    const barreraOpen = road.indexOf('*')
+    const lastBarreraOpen = road.lastIndexOf('*')
+    console.log(currentPosition)
+
+    if (barrera === i + 1) {
+      stop = true
     }
 
-    if (i >= 1 && i <= 2) {
-      camino = camino.map(c => {
-        if (c === '|') return '|'
+    if (nextDot !== -1 && !stop && count === 0) {
+      road =
+        road.substring(0, currentPosition) +
+        '.' +
+        road.substring(newPosition, nextDot) +
+        'S' +
+        road.substring(nextDot + 1)
 
-        if (c === 'S') {
-          count++
-          return '.'
-        }
+      currentPosition = nextDot
 
-        if (count > 0) {
-          count--
-          return 'S'
-        }
+      result.push(road)
+    } else {
+      console.log('paso por acá no es punto')
+      if (i === 4) {
+        const nextDot = road.indexOf('|', newPosition)
 
-        return '.'
-      })
+        road =
+          road.substring(0, currentPosition) +
+          '.' +
+          road.substring(newPosition, nextDot) +
+          'S' +
+          road.substring(nextDot + 1)
 
-      console.log({ camino })
-      result.push(camino.join(''))
+        road = road.replace('|', '*')
+
+        currentPosition = nextDot
+
+        stop = false
+        count++
+      }
+
+      if (lastBarreraOpen !== -1 && time === 9) {
+        console.log('paso por acá')
+        road = '*' + 'S' + road.substring(newPosition, nextDot) + '.' + road.substring(nextDot + 1)
+
+        currentPosition = nextDot
+      }
+      result.push(road)
     }
 
-    if (i === 6) {
-      camino = camino.map(c => {
-        if (c === '|' && count2 === 0) {
-          count2++
-          return 'S'
-        }
+    if (barreraOpen !== -1 && count === 1) {
+      road =
+        road.substring(0, currentPosition) +
+        '*' +
+        road.substring(newPosition, nextDot) +
+        'S' +
+        road.substring(nextDot + 1)
 
-        if (c === '|') return '*'
+      currentPosition = nextDot
 
-        return '.'
-      })
-      result.push(camino.join(''))
-    }
-
-    if (i > 6) {
-      camino = camino.map(c => {
-        if (c === 'S' && count3 === 0) {
-          count3 = 1
-          return '*'
-        }
-
-        if (count3 === 1) {
-          count3 = 2
-          return 'S'
-        }
-
-        if (c === 'S') {
-          count++
-          return '.'
-        }
-
-        if (count > 0) {
-          count--
-          return 'S'
-        }
-
-        if (c === '*') return '*'
-
-        return '.'
-      })
-      result.push(camino.join(''))
+      result.push(road)
+      count--
     }
   }
   return result
