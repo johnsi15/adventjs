@@ -1,12 +1,15 @@
 export function decode(message) {
-  let result
-  while ((result = /\(([a-zA-Z ]*?)\)/g.exec(message))) {
-    const capture = result[1].split('').reverse().join('')
-    const before = message.substring(0, result.index)
-    const after = message.substring(result.index + result[0].length)
-    message = before + capture + after
+  let result = message
+  for (let i = 0; i < message.length; i++) {
+    const match = /\(([a-zA-Z ]*?)\)/g.exec(result)
+    if (!match) break
+
+    const capture = match[1].split('').reverse().join('')
+    const before = result.substring(0, match.index)
+    const after = result.substring(result.indexOf(')') + 1)
+    result = before + capture + after
   }
-  return message
+  return result
 }
 
 const a = decode('hola (odnum)')
