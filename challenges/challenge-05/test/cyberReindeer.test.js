@@ -1,6 +1,6 @@
 import { cyberReindeer } from '../cyberReindeer.js'
 describe('Cyber truck de santa', () => {
-  test('Should return ', () => {
+  test('Test #1 - "S..|...|.."', () => {
     const road = 'S..|...|..'
     const time = 10 // unidades de tiempo
     const result = cyberReindeer(road, time)
@@ -17,6 +17,17 @@ describe('Cyber truck de santa', () => {
       '...*..S*..', // avanza el trineo la carretera
       '...*...S..', // avanza por la barrera abierta
     ]
+
+    expect(result).toBeDefined()
+    expect(result).toStrictEqual(SOLUTION)
+  })
+
+  test('Test #2 - "S.|."', () => {
+    const road = 'S.|.'
+    const time = 4 // unidades de tiempo
+    const result = cyberReindeer(road, time)
+
+    const SOLUTION = ['S.|.', '.S|.', '.S|.', '.S|.']
 
     expect(result).toBeDefined()
     expect(result).toStrictEqual(SOLUTION)
