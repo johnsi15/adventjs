@@ -15,7 +15,7 @@ Todas las soluciones que he desarrollado incluyen sus correspondientes test.
 |   <img src="https://adventjs.dev/challenges-2023/3.png" width="50" />  	|    3 	|   [El elfo travieso](https://adventjs.dev/es/challenges/2023/3)   	|     🟢       	|   [solución](/challenges/challenge-03)      	|   370     	|
 |   <img src="https://adventjs.dev/challenges-2023/4.png" width="50" />  	|    4 	|   [Dale la vuelta a los paréntesis](https://adventjs.dev/es/challenges/2023/4)   	|    🟠        	|    [solución](/challenges/challenge-04)      	|    280    	|
 |   <img src="https://adventjs.dev/challenges-2023/5.png" width="50" />  	|    5 	|   [El CyberTruck de Santa](https://adventjs.dev/es/challenges/2023/5)   	|      🟠      	|     [solución](/challenges/challenge-05)     	|     160   	|
-|   <img src="https://adventjs.dev/challenges-2023/6.png" width="50" /> 	|   6  	|  [🦌 Los renos a prueba ](https://adventjs.dev/es/challenges/2023/6)   	|      🟢      	|   [solución](/challenges/challenge-06)       	|     0   	|
+|   <img src="https://adventjs.dev/challenges-2023/6.png" width="50" /> 	|   6  	|  [🦌 Los renos a prueba ](https://adventjs.dev/es/challenges/2023/6)   	|      🟢      	|   [solución](/challenges/challenge-06)       	|     360   	|
 |     	|     	|      	|            	|          	|        	|
 
 
