@@ -34,13 +34,13 @@ describe('Cyber truck de santa', () => {
     const movements = '***<<<<>>>>>***'
     const result = maxDistance(movements)
 
-    const SOLUTION = 5
+    const SOLUTION = 7
 
     expect(result).toBeDefined()
     expect(result).toBe(SOLUTION)
   })
 
-  test('Test #4', () => {
+  test('Test #5', () => {
     const movements = '<<**>>'
     const result = maxDistance(movements)
 
