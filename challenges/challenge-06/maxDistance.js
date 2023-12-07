@@ -1,6 +1,22 @@
 export function maxDistance(movements) {
-  // Code here
-  return 0
+  let maxDistance = 0
+  let main = movements[0]
+
+  movements.split('').forEach(m => {
+    if (main === '*') {
+      main = m
+    }
+
+    if (main === m) {
+      maxDistance++
+    } else if (m === '*') {
+      maxDistance++
+    } else {
+      Math.abs(maxDistance--)
+    }
+  })
+
+  return maxDistance
 }
 
 const movements = '>>*<'
