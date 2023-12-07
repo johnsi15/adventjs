@@ -19,6 +19,6 @@ Todas las soluciones que he desarrollado incluyen sus correspondientes test.
 |     	|     	|      	|            	|          	|        	|
 
 
-## Gracias [midudev](https://twitter.com/midudev) :heart:
+## Gracias [midudev](https://twitter.com/midudev) 💖
 
 Follow me: [Linkedin](https://www.linkedin.com/in/jandreys15) - [Twitter](https://twitter.com/Jandrey15) - [Facebook](https://www.facebook.com/johnserrano15)
