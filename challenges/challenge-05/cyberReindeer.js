@@ -23,8 +23,3 @@ const time = 10 // unidades de tiempo
 const result = cyberReindeer(road, time)
 
 console.log(result)
-
-// cada unidad de tiempo -> trineo avanza a la derecha
-// si encuentra una barrera el trineo se detiene hasta que se abra
-// si esta abierto atraviesa directamente
-//   despues de 5 unidades de tiempo se reemplaza la barrera por un *

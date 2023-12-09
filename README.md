@@ -2,9 +2,12 @@
 
 ![adventjs-2023](https://github.com/johnsi15/adventjs/assets/2974447/458e2bb1-6b00-47ac-a7d2-97398e2bc323)
 
-[AdventJS](https://adventjs.dev) Este emocionante proyecto ofrece una experiencia única durante los primeros 25 días de diciembre, brindando a los entusiastas de la programación la oportunidad de participar en desafíos diarios llenos de lógica y creatividad. Cada día será revelado un nuevo rompecabezas de programación, desafiando a los desarrolladores a demostrar sus habilidades en JavaScript o TypeScript.
+[AdventJS](https://adventjs.dev) Este emocionante proyecto ofrece una experiencia única durante **los primeros 25 días de diciembre**, brindando a los entusiastas de la programación la oportunidad de participar en **retos diarios llenos de lógica y creatividad**. 
 
-Todas las soluciones que he desarrollado incluyen sus correspondientes test.
+Cada día será revelado un nuevo rompecabezas de programación, **desafiando a los desarrolladores a demostrar sus habilidades** en **JavaScript** o **TypeScript**. Todas las soluciones que he desarrollado incluyen sus correspondientes **test**.
+
+Si te gustaría conocer más sobre AdventJS, te invito a leer mi **último artículo** donde explico en detalle qué es y cómo funciona este emocionante proyecto de **retos diarios de programación**. ¡Descubre la magia detrás de cada reto! 🚀✨ [Programa tu propia aventura navideña con AdventJS retos diarios](https://johnserrano.co/blog/programa-tu-propia-aventura-navidena-con-adventjs-retos-diarios)
+
 
 ¿Quieres ayudarme a mejorar mi repositorio? Deja **una estrellita** y ayúdame a llegar a más personas. **Gracias por tu apoyo**.
 
