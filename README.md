@@ -6,6 +6,8 @@
 
 Todas las soluciones que he desarrollado incluyen sus correspondientes test.
 
+¿Quieres ayudarme a mejorar mi repositorio? Deja **una estrellita** y ayúdame a llegar a más personas. **Gracias por tu apoyo**.
+
 ## Retos
 
 | Img 	| Día 	| Reto 	| Dificultad 	| Solución 	| Puntos 	|
