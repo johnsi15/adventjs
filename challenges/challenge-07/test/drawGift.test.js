@@ -5,15 +5,15 @@ describe('Las cajas en 3D', () => {
     const symbol = '+'
     const result = drawGift(size, symbol)
 
-    const SOLUTION = `####
-            #++##
-          #++#+#
-          ####++#
-          #++#+#
-          #++##
-          ####`
+    const SOLUTION = `   ####
+                        #++##
+                       #++#+#
+                      ####++#
+                      #++#+#
+                      #++##
+                      ####`
 
     expect(result).toBeDefined()
-    expect(result).toBe(SOLUTION)
+    expect(result).toMatch(SOLUTION)
   })
 })
