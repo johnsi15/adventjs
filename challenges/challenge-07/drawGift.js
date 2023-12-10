@@ -3,8 +3,7 @@ export function drawGift(size, symbol) {
   // console.log({ codigoASCII })
   const symbolLine = '#'
   let result = ''
-  let bodyUp = ''
-  let bodyDown = ''
+  let body = ''
 
   for (let i = 1; i <= size; i++) {
     // let line = ' '.repeat(size - i) + symbolLine.repeat(i)
@@ -15,24 +14,15 @@ export function drawGift(size, symbol) {
     }
 
     // console.log(line)
-    bodyUp += line + '\n'
+    body += line + '\n'
   }
 
-  console.log('--'.repeat(20))
-
-  for (let i = size - 1; i > 0; i--) {
-    let line = ' '.repeat(size - i) + symbolLine.repeat(i)
-
-    if (i > 1) {
-      line += symbol.repeat((i - 2) * 2 + 1) + symbolLine
-    }
-    bodyDown += line + '\n'
-  }
+  const bodyDown = body.split('\n').reverse().join('\n') + '\n'
 
   const lineStart = ' '.repeat(size - 1) + symbolLine.repeat(size) + '\n'
   const lineEnd = symbolLine.repeat(size) + '\n'
 
-  result = lineStart + bodyUp + bodyDown + lineEnd
+  result = lineStart + body + bodyDown + lineEnd
   return result
 }
 
