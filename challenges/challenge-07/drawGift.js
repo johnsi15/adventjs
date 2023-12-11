@@ -22,17 +22,11 @@ export function drawGift(size, symbol) {
   return result
 }
 
-// const result4 = drawGift(2, '*')
-// console.log(result4)
-
-// const result5 = drawGift(3, '&')
-// console.log(result5)
-
 const result = drawGift(4, '+')
 console.log(result)
 
-// const result2 = drawGift(5, '*')
-// console.log(result2)
+const result2 = drawGift(5, '*')
+console.log(result2)
 
-// const result3 = drawGift(1, '^')
-// console.log(result3)
+const result3 = drawGift(1, '^')
+console.log(result3)

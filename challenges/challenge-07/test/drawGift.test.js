@@ -6,12 +6,13 @@ describe('Las cajas en 3D', () => {
     const result = drawGift(size, symbol)
 
     const SOLUTION = `   ####
-                        #++##
-                       #++#+#
-                      ####++#
-                      #++#+#
-                      #++##
-                      ####`
+  #++##
+ #++#+#
+####++#
+#++#+#
+#++##
+####
+`
 
     expect(result).toBeDefined()
     expect(result).toEqual(SOLUTION)
