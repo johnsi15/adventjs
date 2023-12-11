@@ -1,44 +1,38 @@
 export function drawGift(size, symbol) {
-  if (size <= 1) return '#\n'
-
   const symbolLine = '#'
   let result = ''
-  let body = ''
-  const mitad = size - 2
-  console.log({ mitad })
+  let bodyTop = ''
+  let bodyBottom = ''
+  let mitad = size - 2
+  mitad += +!(mitad + 1)
 
-  for (let i = 1; i <= mitad; i++) {
-    let line = ' '.repeat(size - i - 1) + symbolLine
-    line += symbol.repeat(mitad) + symbolLine + symbol.repeat(i - 1)
-    line += symbolLine
-    body += line + '\n'
+  for (let i = 0; i < mitad; i++) {
+    let line = symbolLine + symbol.repeat(mitad) + symbolLine + symbol.repeat(i) + symbolLine
+
+    bodyTop += ' '.repeat(mitad - i) + line + '\n'
+    bodyBottom = line + '\n' + bodyBottom
   }
 
-  let boxMitad = ''
-  if (size > 2) {
-    boxMitad = symbolLine.repeat(size) + symbol.repeat(mitad) + symbolLine
-  } else {
-    boxMitad = symbolLine.repeat(size + 1)
-  }
-
-  const bodyDown = body.split('\n').reverse().join('\n') + '\n'
-  let bodyDownClean = bodyDown.replaceAll(' ', '')
+  const boxMitad = symbolLine.repeat(size) + symbol.repeat(mitad) + symbolLine + '\n'
 
   const lineStart = ' '.repeat(size - 1) + symbolLine.repeat(size) + '\n'
   const lineEnd = symbolLine.repeat(size) + '\n'
 
-  result = lineStart + body + boxMitad + bodyDownClean + lineEnd
+  result = lineStart + (bodyTop + boxMitad + bodyBottom + lineEnd).repeat(+!!(size - 1))
   return result
 }
 
-const result4 = drawGift(3, '&')
-console.log(result4)
+// const result4 = drawGift(2, '*')
+// console.log(result4)
+
+// const result5 = drawGift(3, '&')
+// console.log(result5)
 
 const result = drawGift(4, '+')
 console.log(result)
 
-const result2 = drawGift(5, '*')
-console.log(result2)
+// const result2 = drawGift(5, '*')
+// console.log(result2)
 
-const result3 = drawGift(1, '^')
-console.log(result3)
+// const result3 = drawGift(1, '^')
+// console.log(result3)

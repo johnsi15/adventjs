@@ -14,6 +14,6 @@ describe('Las cajas en 3D', () => {
                       ####`
 
     expect(result).toBeDefined()
-    expect(result).toMatch(SOLUTION)
+    expect(result).toEqual(SOLUTION)
   })
 })
