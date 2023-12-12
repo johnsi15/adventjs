@@ -23,6 +23,7 @@ Si te gustaría conocer más sobre AdventJS, te invito a leer mi **último artí
 |   <img src="https://adventjs.dev/challenges-2023/6.png" width="50" /> 	|   6  	|  [Los renos a prueba ](https://adventjs.dev/es/challenges/2023/6)   	|      🟢      	|   [solución](/challenges/challenge-06)       	|     360   	|
 |   <img src="https://adventjs.dev/challenges-2023/7.png" width="50" />  	|   7  	| [Las cajas en 3D](https://adventjs.dev/es/challenges/2023/7)    	|      🟢      	|    [solución](/challenges/challenge-07)      	|    290    	|
 | <img src="https://adventjs.dev/challenges-2023/8.png" width="50" /> 	|   8  	|   [Ordenando el almacén](https://adventjs.dev/es/challenges/2023/8)   	|     🟠       	|    [solución](/challenges/challenge-08)      	|    270    	|
+|  <img src="https://adventjs.dev/challenges-2023/9.png" width="50" />   	|   9  	|  [Alterna las luces](https://adventjs.dev/es/challenges/2023/9)    	|      🟢      	|      [solución](/challenges/challenge-09)     	|    360    	|
 |     	|     	|      	|            	|          	|        	|
 
 
