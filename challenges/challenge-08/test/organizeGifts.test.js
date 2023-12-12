@@ -9,4 +9,14 @@ describe('Ordenando el almacén', () => {
     expect(result).toBeDefined()
     expect(result).toEqual(SOLUTION)
   })
+
+  test('Test #2', () => {
+    const gifts = `70b120a4c`
+    const result = organizeGifts(gifts)
+
+    const SOLUTION = `[b]{b}{b}[a][a]{a}{a}(cccc)`
+
+    expect(result).toBeDefined()
+    expect(result).toEqual(SOLUTION)
+  })
 })
