@@ -1,0 +1,30 @@
+{
+  "name": "challenge-08",
+  "version": "1.0.0",
+  "description": "Reto #8: 🏬 Ordenando el almacén",
+  "main": "organizeGifts.js",
+  "type": "module",
+  "scripts": {
+    "prod": "node organizeGifts.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "adventjs",
+    "challenge",
+    "desafíos",
+    "retos",
+    "JavaScript",
+    "programación",
+    "navidad"
+  ],
+  "author": "John Serrano",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "7.23.5",
+    "@babel/plugin-transform-modules-commonjs": "7.23.3",
+    "@babel/preset-env": "7.23.5",
+    "@types/jest": "29.5.10",
+    "babel-jest": "29.7.0",
+    "jest": "29.7.0"
+  }
+}
