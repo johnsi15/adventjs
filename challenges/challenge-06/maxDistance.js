@@ -3,7 +3,7 @@ export function maxDistance(movements) {
   let right = 0
   let left = 0
 
-  movements.split('').forEach(m => {
+  for (const m of movements) {
     if (m === '>') {
       right++
       distance++
@@ -11,7 +11,7 @@ export function maxDistance(movements) {
       distance--
       left++
     }
-  })
+  }
 
   let extra = movements.length - (right + left)
 
