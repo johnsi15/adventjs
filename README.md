@@ -25,6 +25,7 @@ Si te gustaría conocer más sobre AdventJS, te invito a leer mi **último artí
 | <img src="https://adventjs.dev/challenges-2023/8.png" width="50" /> 	|   8  	|   [Ordenando el almacén](https://adventjs.dev/es/challenges/2023/8)   	|     🟠       	|    [solución](/challenges/challenge-08)      	|    270    	|
 |  <img src="https://adventjs.dev/challenges-2023/9.png" width="50" />   	|   9  	|  [Alterna las luces](https://adventjs.dev/es/challenges/2023/9)    	|      🟢      	|      [solución](/challenges/challenge-09)     	|    360    	|
 |    <img src="https://adventjs.dev/challenges-2023/10.png" width="50" />  	|   10  	|   [Crea tu propio árbol de navidad](https://adventjs.dev/es/challenges/2023/10)   	|    🟢        	|    [solución](/challenges/challenge-10)      	|   280     	|
+|    <img src="https://adventjs.dev/challenges-2023/11.png" width="50" />   	|  11   	|   [Los elfos estudiosos](https://adventjs.dev/es/challenges/2023/11)   	|     🟠       	|    [solución](/challenges/challenge-11)      	|    40    	|
 |     	|     	|      	|            	|          	|        	|
 
 
