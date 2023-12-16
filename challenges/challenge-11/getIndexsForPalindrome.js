@@ -1,21 +1,26 @@
 export function getIndexsForPalindrome(word) {
   const wordList = word.split('')
-  if (word === [...wordList].reverse().join('')) return []
+  const index = wordList.findIndex((letter, i) => letter !== word.at(-i - 1))
 
-  for (const [i] of wordList.entries()) {
-    let j = i + 1
-    while (j < wordList.length) {
-      const words = [...wordList]
-      const wordNext = words[j]
-      const wordNow = words[i]
-      // console.log({ wordNow, wordNext })
-      words[i] = wordNext
-      words[j] = wordNow
+  if (index === -1) return []
 
-      const wordsReverse = [...words].reverse().join('')
-      if (words.join('') === wordsReverse) return [i, j]
-      j++
-    }
+  const len = word.length - 1 - index
+
+  for (let i = index + 1; i < len; i++) {
+    const words = [...wordList]
+    words[index] = word.at(i)
+    words[i] = word.at(index)
+
+    const wordsReverse = [...words].reverse().join('')
+    // console.log({ words: words.join(''), wordsReverse })
+    if (words.join('') === wordsReverse) return [index, i]
+
+    words[index] = word.at(index)
+    words[i] = word.at(len)
+    words[len] = word.at(i)
+
+    // console.log({ words: words.join(' ') })
+    if (words.every((l, i) => l == words.at(words.length - 1 - i))) return [index + i, len]
   }
 
   return null
