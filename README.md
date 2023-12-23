@@ -28,6 +28,7 @@ Si te gustaría conocer más sobre AdventJS, te invito a leer mi **último artí
 |    <img src="https://adventjs.dev/challenges-2023/11.png" width="50" />   	|  11   	|   [Los elfos estudiosos](https://adventjs.dev/es/challenges/2023/11)   	|     🟠       	|    [solución](/challenges/challenge-11)      	|    200    	|
 |   <img src="https://adventjs.dev/challenges-2023/12.png" width="50" />  	|   12  	|   [¿Es una copia válida?](https://adventjs.dev/es/challenges/2023/12)   	|      🟠      	|    [solución](/challenges/challenge-12)      	|     170   	|
 |   <img src="https://adventjs.dev/challenges-2023/13.png" width="50" />  	|   13  	|   [Calculando el tiempo](https://adventjs.dev/es/challenges/2023/13)   	|     🟢       	|     [solución](/challenges/challenge-13)     	|     130   	|
+|   <img src="https://adventjs.dev/challenges-2023/14.png" width="50" />   	|   14  	|   [Evita la alarma](https://adventjs.dev/es/challenges/2023/14)   	|    🟠        	|    [solución](/challenges/challenge-14)       	|    260    	|
 |     	|     	|      	|            	|          	|        	|
 
 
