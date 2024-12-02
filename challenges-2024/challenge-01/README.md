@@ -1,26 +1,20 @@
 # Reto #1: 🎁 ¡Primer regalo repetido!
 
-En la fábrica de juguetes del Polo Norte, cada juguete tiene un número de identificación único.
+Santa Claus 🎅 ha recibido una lista de números mágicos que representan regalos 🎁, pero algunos de ellos están duplicados y deben ser eliminados para evitar confusiones. Además, los regalos deben ser ordenados en orden ascendente antes de entregárselos a los elfos.
 
-Sin embargo, debido a un error en la máquina de juguetes, algunos números se han asignado a más de un juguete.
-
-¡Encuentra el primer número de identificación que se ha repetido, **donde la segunda ocurrencia tenga el índice más pequeño**!
-
-En otras palabras, si hay más de un número repetido, debes devolver el número cuya segunda ocurrencia aparezca primero en la lista. Si no hay números repetidos, devuelve -1.
+Tu tarea es escribir una función que reciba una lista de números enteros (que pueden incluir duplicados) y devuelva una nueva lista sin duplicados, ordenada en orden ascendente.
 
 ```js
-const giftIds = [2, 1, 3, 5, 3, 2]
-const firstRepeatedId = findFirstRepeated(giftIds)
-console.log(firstRepeatedId) // 3
-// Aunque el 2 y el 3 se repiten
-// el 3 aparece primero por segunda vez
+const gifts1 = [3, 1, 2, 3, 4, 2, 5]
+const preparedGifts1 = prepareGifts(gifts1)
+console.log(preparedGifts1) // [1, 2, 3, 4, 5]
 
-const giftIds2 = [1, 2, 3, 4]
-const firstRepeatedId2 = findFirstRepeated(giftIds2)
-console.log(firstRepeatedId2) // -1
-// Es -1 ya que no se repite ningún número
+const gifts2 = [6, 5, 5, 5, 5]
+const preparedGifts2 = prepareGifts(gifts2)
+console.log(preparedGifts2) // [5, 6]
 
-const giftIds3 = [5, 1, 5, 1]
-const firstRepeatedId3 = findFirstRepeated(giftIds3)
-console.log(firstRepeatedId3) // 5
+const gifts3 = []
+const preparedGifts3 = prepareGifts(gifts3)
+console.log(preparedGifts3) // []
+// No hay regalos, la lista queda vacía
 ```
