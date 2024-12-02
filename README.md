@@ -11,6 +11,12 @@ Si te gustaría conocer más sobre AdventJS, te invito a leer mi **último artí
 
 ¿Quieres ayudarme a mejorar mi repositorio? Deja **una estrellita** y ayúdame a llegar a más personas. **Gracias por tu apoyo**.
 
+## Retos 2024
+
+| Día 	| Reto 	| Dificultad 	| Solución 	|
+|-----	|------	|------------	|----------	|
+|    1 	|   [¡Primer regalo repetido!](https://adventjs.dev/es/challenges/2024/1)   	|      🟢      	|     [solución](/challenges-2024/challenge-01) |
+
 ## Retos 2023
 
 ![adventjs-2023](https://github.com/johnsi15/adventjs/assets/2974447/458e2bb1-6b00-47ac-a7d2-97398e2bc323)
@@ -33,11 +39,6 @@ Si te gustaría conocer más sobre AdventJS, te invito a leer mi **último artí
 |   <img src="https://2023.adventjs.dev/challenges-2023/14.png" width="50" />   	|   14  	|   [Evita la alarma](https://2023.adventjs.dev/es/challenges/2023/14)   	|    🟠        	|    [solución](/challenges-2023/challenge-14)       	|    260    	|
 |     	|     	|      	|            	|          	|        	|
 
-# Retos 2024
-
-| Día 	| Reto 	| Dificultad 	| Solución 	|
-|-----	|------	|------------	|----------	|
-|    1 	|   [¡Primer regalo repetido!](https://adventjs.dev/es/challenges/2024/1)   	|      🟢      	|     [solución](/challenges-2024/challenge-01) |
 
 ## Gracias [midudev](https://twitter.com/midudev) 💖
 
