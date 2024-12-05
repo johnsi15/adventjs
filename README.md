@@ -17,6 +17,7 @@ Si te gustaría conocer más sobre AdventJS, te invito a leer mi **último artí
 |-----	|------	|------------	|----------	|
 |    1 	|   [¡Primer regalo repetido!](https://adventjs.dev/es/challenges/2024/1)   	|      🟢      	|     [solución](/challenges-2024/challenge-01) |
 |    2 	|   [Enmarcando nombres](https://adventjs.dev/es/challenges/2024/2)   	|      🟢      	|     [solución](/challenges-2024/challenge-02) |
+|    3 	|   [Organizando el inventario](https://adventjs.dev/es/challenges/2024/3)   	|      🟢      	|     [solución](/challenges-2024/challenge-03) |
 
 
 ## Retos 2023

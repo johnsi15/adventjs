@@ -1,7 +1,7 @@
 {
   "name": "challenge-02",
   "version": "1.0.0",
-  "description": "Reto #2: 🖼️ Enmarcando nombres",
+  "description": "Reto #2: 🏭 Organizando el inventario",
   "main": "organizeInventory.js",
   "type": "module",
   "scripts": {
