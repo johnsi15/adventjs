@@ -18,6 +18,8 @@ Si te gustaría conocer más sobre AdventJS, te invito a leer mi **último artí
 |    1 	|   [¡Primer regalo repetido!](https://adventjs.dev/es/challenges/2024/1)   	|      🟢      	|     [solución](/challenges-2024/challenge-01) |
 |    2 	|   [Enmarcando nombres](https://adventjs.dev/es/challenges/2024/2)   	|      🟢      	|     [solución](/challenges-2024/challenge-02) |
 |    3 	|   [Organizando el inventario](https://adventjs.dev/es/challenges/2024/3)   	|      🟢      	|     [solución](/challenges-2024/challenge-03) |
+|    4 	|   [Decorando el árbol de Navidad](https://adventjs.dev/es/challenges/2024/4)   	|      🟠      	|     [solución](/challenges-2024/challenge-04) |
+|    5 	|   [Emparejando botas](https://adventjs.dev/es/challenges/2024/5)   	|      🟢      	|     [solución](/challenges-2024/challenge-05) |
 
 
 ## Retos 2023

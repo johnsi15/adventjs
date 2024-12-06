@@ -1,7 +1,7 @@
 {
   "name": "challenge-04",
   "version": "1.0.0",
-  "description": "Reto #4: 🎄Decorando el árbol de Navidad",
+  "description": "Reto #4: 🎄 Decorando el árbol de Navidad",
   "main": "createXmasTree.js",
   "type": "module",
   "scripts": {
