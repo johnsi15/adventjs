@@ -1,40 +1,26 @@
-# Reto #2: 🖼️ Enmarcando nombres
+# Reto #4: 🎄 Decorando el árbol de Navidad
 
-Santa Claus 🎅 quiere enmarcar los nombres de los niños buenos para decorar su taller 🖼️, pero el marco debe cumplir unas reglas específicas. Tu tarea es ayudar a los elfos a generar este marco mágico.
+¡Es hora de poner el árbol de Navidad en casa! 🎄 Pero este año queremos que sea especial. Vamos a crear una función que recibe la altura del árbol (un entero positivo entre 1 y 100) y un carácter especial para decorarlo.
 
-Reglas:
+La función debe devolver un string que represente el árbol de Navidad, construido de la siguiente manera:
 
-Dado un array de nombres, debes crear un marco rectangular que los contenga a todos.
-Cada nombre debe estar en una línea, alineado a la izquierda.
-El marco está construido con * y tiene un borde de una línea de ancho.
-La anchura del marco se adapta automáticamente al nombre más largo más un margen de 1 espacio a cada lado.
-Ejemplo de funcionamiento:
+El árbol está compuesto de triángulos de caracteres especiales.
+Los espacios en blanco a los lados del árbol se representan con guiones bajos _.
+Todos los árboles tienen un tronco de dos líneas, representado por el carácter #.
+El árbol siempre debe tener la misma longitud por cada lado.
+Debes asegurarte de que el árbol tenga la forma correcta usando saltos de línea \n para cada línea.
 
 ```js
-createFrame(['midu', 'madeval', 'educalvolpz'])
+const tree = createXmasTree(5, '*')
+console.log(tree)
 
-// Resultado esperado:
-***************
-* midu        *
-* madeval     *
-* educalvolpz *
-***************
-
-createFrame(['midu'])
-
-// Resultado esperado:
-********
-* midu *
-********
-
-createFrame(['a', 'bb', 'ccc'])
-
-// Resultado esperado:
-*******
-* a   *
-* bb  *
-* ccc *
-*******
-
-createFrame(['a', 'bb', 'ccc', 'dddd'])
+/*
+____*____
+___***___
+__*****__
+_*******_
+*********
+____#____
+____#____
+*/
 ```
