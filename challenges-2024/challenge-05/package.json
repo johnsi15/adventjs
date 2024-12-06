@@ -1,11 +1,11 @@
 {
-  "name": "challenge-04",
+  "name": "challenge-05",
   "version": "1.0.0",
-  "description": "Reto #4: 🎄Decorando el árbol de Navidad",
-  "main": "createXmasTree.js",
+  "description": "Reto #5: 👞 Emparejando botas",
+  "main": "organizeShoes.js",
   "type": "module",
   "scripts": {
-    "prod": "node createXmasTree.js",
+    "prod": "node organizeShoes.js",
     "test": "jest"
   },
   "keywords": [

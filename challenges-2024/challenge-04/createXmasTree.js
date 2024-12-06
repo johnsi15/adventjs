@@ -2,7 +2,6 @@ export function createXmasTree(height, ornament) {
   const spaces = height - 1
 
   const base = '_'.repeat(spaces) + '#' + '_'.repeat(spaces)
-
   const lines = []
 
   for (let i = 0; i < height; i++) {
@@ -16,7 +15,7 @@ export function createXmasTree(height, ornament) {
   return lines.join('\n')
 }
 
-const tree = createXmasTree(1, '*')
+const tree = createXmasTree(5, '*')
 console.log(tree)
 /*
 ____*____
