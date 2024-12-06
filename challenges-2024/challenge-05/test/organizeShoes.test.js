@@ -1,16 +1,17 @@
-import { createXmasTree } from '../organizeShoes'
+import { organizeShoes } from '../organizeShoes'
 describe('First repeat gift', () => {
   test('Should return an array without duplicates', () => {
-    const tree = `____*____
-___***___
-__*****__
-_*******_
-*********
-____#____
-____#____`
-    const result = createXmasTree(5, '*')
+    const shoes = [
+      { type: 'I', size: 38 },
+      { type: 'R', size: 38 },
+      { type: 'I', size: 38 },
+      { type: 'I', size: 38 },
+      { type: 'R', size: 38 },
+    ]
+
+    const result = organizeShoes(shoes)
 
     expect(result).toBeDefined()
-    expect(result).toEqual(tree)
+    expect(result).toEqual([38, 38])
   })
 })

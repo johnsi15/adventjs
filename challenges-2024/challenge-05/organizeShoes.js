@@ -1,18 +1,24 @@
 export function organizeShoes(shoes) {
   const pairs = []
-  const shoesMatched = new Set()
-
-  // const boot_counts = new Map()
+  const boot_counts = new Map()
 
   for (const shoe of shoes) {
-    if (shoesMatched.has(shoe)) continue
+    const size = shoe.size
+    const type = shoe.type
 
-    const pair = shoes.find(s => s.size === shoe.size && s.type !== shoe.type && !shoesMatched.has(s))
+    if (!boot_counts.has(size)) {
+      boot_counts.set(size, { I: 0, R: 0 })
+    }
 
-    if (pair) {
-      pairs.push(shoe.size)
-      shoesMatched.add(shoe)
-      shoesMatched.add(pair)
+    boot_counts.get(size)[type]++
+  }
+
+  for (const [size, counts] of boot_counts) {
+    const { I, R } = counts
+    const min = Math.min(I, R)
+
+    if (min > 0) {
+      pairs.push(...new Array(min).fill(size))
     }
   }
 
@@ -22,9 +28,9 @@ export function organizeShoes(shoes) {
 const shoes = [
   { type: 'I', size: 38 },
   { type: 'R', size: 38 },
-  { type: 'I', size: 38 },
-  { type: 'I', size: 38 },
-  { type: 'R', size: 38 },
+  { type: 'R', size: 42 },
+  { type: 'I', size: 41 },
+  { type: 'I', size: 42 },
 ]
 
 const result = organizeShoes(shoes)
