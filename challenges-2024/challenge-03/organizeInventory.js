@@ -7,13 +7,17 @@ const inventary = [
 ]
 
 export function organizeInventory(inventory) {
-  const result = inventory.reduce((acc, { category, name, quantity }) => {
-    if (!acc[category]) acc[category] = {}
+  let result = {}
 
-    acc[category][name] = (acc[category][name] || 0) + quantity
+  for (const items of inventory) {
+    const { name, quantity, category } = items
 
-    return acc
-  }, {})
+    if (!result.hasOwnProperty(category)) {
+      result[category] = {}
+    }
+
+    result[category][name] = (result[category][name] || 0) + quantity
+  }
 
   return result
 }
