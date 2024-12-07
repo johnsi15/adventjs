@@ -8,7 +8,8 @@
     "challenges/*"
   ],
   "scripts": {
-    "co": "sui-mono commit"
+    "co": "sui-mono commit",
+    "lint": "eslint **/*.js"
   },
   "keywords": [
     "adventjs",
@@ -22,6 +23,11 @@
   "author": "John Serrano",
   "license": "ISC",
   "devDependencies": {
-    "@s-ui/mono": "2.41.0"
+    "@s-ui/mono": "2.41.0",
+    "eslint": "8.57.1",
+    "eslint-config-standard": "17.1.0",
+    "eslint-plugin-import": "2.31.0",
+    "eslint-plugin-n": "16.6.2",
+    "eslint-plugin-promise": "6.6.0"
   }
 }
