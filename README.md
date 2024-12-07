@@ -24,7 +24,7 @@ cd adventjs
 npm install
 
 # Move to challenges
-cd ./challenges-2024/challenge-05
+cd ./challenges-2024
 
 # Run tests
 npm run test
