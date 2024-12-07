@@ -11,7 +11,7 @@ Si te gustaría conocer más sobre AdventJS, te invito a leer mi **último artí
 
 ¿Quieres ayudarme a mejorar mi repositorio? Deja **una estrellita** y ayúdame a llegar a más personas. **Gracias por tu apoyo**.
 
-## Retos 2024
+## 🎯 Retos 2024
 
 | Día 	| Reto 	| Dificultad 	| Solución 	|
 |-----	|------	|------------	|----------	|
@@ -20,9 +20,10 @@ Si te gustaría conocer más sobre AdventJS, te invito a leer mi **último artí
 |    3 	|   [Organizando el inventario](https://adventjs.dev/es/challenges/2024/3)   	|      🟢      	|     [solución](/challenges-2024/challenge-03) |
 |    4 	|   [Decorando el árbol de Navidad](https://adventjs.dev/es/challenges/2024/4)   	|      🟠      	|     [solución](/challenges-2024/challenge-04) |
 |    5 	|   [Emparejando botas](https://adventjs.dev/es/challenges/2024/5)   	|      🟢      	|     [solución](/challenges-2024/challenge-05) |
+|    6 	|   [¿Regalo dentro de la caja?](https://adventjs.dev/es/challenges/2024/6)   	|      🟠      	|     [solución](/challenges-2024/challenge-06) |
 
 
-## Retos 2023
+## 🎯 Retos 2023
 
 ![adventjs-2023](https://github.com/johnsi15/adventjs/assets/2974447/458e2bb1-6b00-47ac-a7d2-97398e2bc323)
 
