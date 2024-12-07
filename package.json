@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "workspaces": [
-    "challenges/*"
+    "challenges-2023/*",
+    "challenges-2024/*"
   ],
   "scripts": {
     "co": "sui-mono commit",
