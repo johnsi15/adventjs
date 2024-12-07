@@ -1,0 +1,65 @@
+name: AdventJS
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize]
+
+jobs:
+  linter:
+    name: ✅ Validate linter
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ⬇️ Checkout project
+        uses: actions/checkout@v3
+
+      - name: Setup NodeJS 20.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.x
+          cache: npm
+          cache-dependency-path: './package-lock.json'
+
+      - name: 📥 Install dependencies
+        run: npm ci
+
+      - name: 📑 Check lint
+        run: npm run lint
+
+  test:
+    name: 🧑‍🔬 Test project
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ⬇️ Checkout project
+        uses: actions/checkout@v3
+
+      - name: Setup NodeJS 20.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.x
+          cache: npm
+          cache-dependency-path: './package-lock.json'
+
+      - name: 📥 Install dependencies
+        run: npm ci
+
+      - name: Detect subprojects in challenges-2024
+        id: detect-subprojects
+        run: |
+          SUBPROJECTS=$(find challenges-2024 -mindepth 1 -maxdepth 1 -type d)
+
+          echo "SUBPROJECTS=$SUBPROJECTS" >> $GITHUB_ENV
+
+      - name: 🧪 Run tests for all subprojects
+        run: |
+          for SUBPROJECT in $SUBPROJECTS; do
+            echo "Running tests for subproject: $SUBPROJECT"
+            cd $SUBPROJECT && npm run test
+            cd -
+          done
+        env:
+          SUBPROJECTS: ${{ env.SUBPROJECTS }}
