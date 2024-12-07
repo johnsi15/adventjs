@@ -1,0 +1,28 @@
+{
+  "name": "challenges-2024",
+  "version": "1.0.0",
+  "description": "Retos",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "adventjs",
+    "challenge",
+    "desafíos",
+    "retos",
+    "JavaScript",
+    "programación",
+    "navidad"
+  ],
+  "author": "John Serrano",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "7.23.5",
+    "@babel/preset-env": "7.23.5",
+    "babel-jest": "29.7.0",
+    "@types/jest": "29.5.10",
+    "jest": "29.7.0"
+  }
+}
