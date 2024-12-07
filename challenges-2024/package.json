@@ -1,11 +1,10 @@
 {
-  "name": "challenge-2024-challenge-02",
+  "name": "challenges-2024",
   "version": "1.0.0",
-  "description": "Reto #2: 🖼️ Enmarcando nombres",
-  "main": "frame.js",
+  "description": "Retos",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "prod": "node frame.js",
     "test": "jest"
   },
   "keywords": [

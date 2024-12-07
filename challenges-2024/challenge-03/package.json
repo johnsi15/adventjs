@@ -1,7 +1,7 @@
 {
-  "name": "challenge-02",
+  "name": "challenge-2024-challenge-03",
   "version": "1.0.0",
-  "description": "Reto #2: 🏭 Organizando el inventario",
+  "description": "Reto #3: 🏭 Organizando el inventario",
   "main": "organizeInventory.js",
   "type": "module",
   "scripts": {
