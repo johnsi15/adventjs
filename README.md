@@ -11,6 +11,25 @@ Si te gustaría conocer más sobre AdventJS, te invito a leer mi **último artí
 
 ¿Quieres ayudarme a mejorar mi repositorio? Deja **una estrellita** y ayúdame a llegar a más personas. **Gracias por tu apoyo**.
 
+## 📥 Installation & Usage
+
+```bash
+# Clone the repository
+git clone https://github.com/johnsi15/adventjs.git
+
+# Go into the repository
+cd adventjs
+
+# Install dependencies
+npm install
+
+# Move to challenges
+cd ./challenges-2024/challenge-05
+
+# Run tests
+npm run test
+```
+
 ## 🎯 Retos 2024
 
 | Día 	| Reto 	| Dificultad 	| Solución 	|
