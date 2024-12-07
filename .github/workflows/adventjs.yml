@@ -50,9 +50,11 @@ jobs:
       - name: Detect subprojects in challenges-2024
         id: detect-subprojects
         run: |
-          SUBPROJECTS=$(find challenges-2024 -mindepth 1 -maxdepth 1 -type d)
+          SUBPROJECTS=$(find challenges-2024 -mindepth 1 -maxdepth 1 -type d | tr '\n' ',')
+          echo "SUBPROJECTS=${SUBPROJECTS%,}" >> $GITHUB_ENV
 
-          echo "SUBPROJECTS=$SUBPROJECTS" >> $GITHUB_ENV
+      - name: Verificar SUBPROJECTS
+        run: echo "SUBPROJECTS=$SUBPROJECTS"
 
       - name: 🧪 Run tests for all subprojects
         run: |
