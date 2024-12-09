@@ -40,6 +40,7 @@ npm run test
 |    4 	|   [Decorando el árbol de Navidad](https://adventjs.dev/es/challenges/2024/4)   	|      🟠      	|     [solución](/challenges-2024/challenge-04) |
 |    5 	|   [Emparejando botas](https://adventjs.dev/es/challenges/2024/5)   	|      🟢      	|     [solución](/challenges-2024/challenge-05) |
 |    6 	|   [¿Regalo dentro de la caja?](https://adventjs.dev/es/challenges/2024/6)   	|      🟠      	|     [solución](/challenges-2024/challenge-06) |
+|    7 	|   [El ataque del Grinch](https://adventjs.dev/es/challenges/2024/7)   	|      🟠      	|     [solución](/challenges-2024/challenge-07) |
 
 
 ## 🎯 Retos 2023
