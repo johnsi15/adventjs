@@ -1,0 +1,29 @@
+{
+  "name": "challenge-2024-challenge-07",
+  "version": "1.0.0",
+  "description": "Reto #7: 👿 El ataque del Grinch",
+  "main": "fixPackages.js",
+  "type": "module",
+  "scripts": {
+    "prod": "node fixPackages.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "adventjs",
+    "challenge",
+    "desafíos",
+    "retos",
+    "JavaScript",
+    "programación",
+    "navidad"
+  ],
+  "author": "John Serrano",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "7.23.5",
+    "@babel/preset-env": "7.23.5",
+    "babel-jest": "29.7.0",
+    "@types/jest": "29.5.10",
+    "jest": "29.7.0"
+  }
+}
