@@ -1,11 +1,9 @@
-import { inBox } from '../fixPackages'
+import { fixPackages } from '../fixPackages'
 describe('First repeat gift', () => {
   test('Should return an array without duplicates', () => {
-    const box = ['###', '#*#', '###']
-
-    const result = inBox(box)
+    const result = fixPackages('a(cb)de')
 
     expect(result).toBeDefined()
-    expect(result).toBeTruthy()
+    expect(result).toBe('abcde')
   })
 })

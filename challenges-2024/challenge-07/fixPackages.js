@@ -1,4 +1,4 @@
-function fixPackages(packages) {
+export function fixPackages(packages) {
   const regex = /\([^()]*\)/
   console.log(regex.exec(packages))
   while (regex.test(packages)) {
