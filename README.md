@@ -41,6 +41,8 @@ npm run test
 |    5 	|   [Emparejando botas](https://adventjs.dev/es/challenges/2024/5)   	|      🟢      	|     [solución](/challenges-2024/challenge-05) |
 |    6 	|   [¿Regalo dentro de la caja?](https://adventjs.dev/es/challenges/2024/6)   	|      🟠      	|     [solución](/challenges-2024/challenge-06) |
 |    7 	|   [El ataque del Grinch](https://adventjs.dev/es/challenges/2024/7)   	|      🟠      	|     [solución](/challenges-2024/challenge-07) |
+|    8 	|   [La carrera de renos](https://adventjs.dev/es/challenges/2024/8)   	|      🟢      	|     [solución](/challenges-2024/challenge-08) |
+|    9 	|   [El ataque del Grinch](https://adventjs.dev/es/challenges/2024/9)   	|      🟠      	|     [solución](/challenges-2024/challenge-09) |
 
 
 ## 🎯 Retos 2023

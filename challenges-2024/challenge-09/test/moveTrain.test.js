@@ -6,6 +6,6 @@ describe('First repeat gift', () => {
     const result = moveTrain(board, 'U')
 
     expect(result).toBeDefined()
-    expect(result).toBe('abcde')
+    expect(result).toBe('eat')
   })
 })
