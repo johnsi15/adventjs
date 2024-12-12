@@ -1,48 +1,35 @@
 const board = ['·····', '*····', '@····', 'o····', 'o····']
 
 export function moveTrain(board, mov) {
+  const directions = {
+    U: [-1, 0], // Arriba
+    D: [1, 0], // Abajo
+    L: [0, -1], // Izquierda
+    R: [0, 1], // Derecha
+  }
+
+  let startRow, startCol
   for (let i = 0; i < board.length; i++) {
-    const row = board[i]
-
-    for (let j = 0; j < row.length; j++) {
-      const cell = row[j]
-
-      if (cell === '@') {
-        const nextRow = board[i + 1] || []
-        const prevRow = board[i - 1] || []
-
-        const nextCell = nextRow[j]
-        const prevCell = prevRow[j]
-        const nextCellRight = row[j + 1]
-        const prevCellRight = row[j - 1]
-
-        if (mov === 'U') {
-          if (prevCell === '*') return 'eat'
-          if (!prevCell || prevCell === 'o') return 'crash'
-          if (prevCell === '.') return 'none'
-        }
-
-        if (mov === 'D') {
-          if (nextCell === '*') return 'eat'
-          if (!nextCell || nextCell === 'o') return 'crash'
-          if (nextCell === '.') return 'none'
-        }
-
-        if (mov === 'L') {
-          if (prevCellRight === '*') return 'eat'
-          if (!prevCellRight || prevCellRight === 'o') return 'crash'
-          if (prevCellRight === '.') return 'none'
-        }
-
-        if (mov === 'R') {
-          if (nextCellRight === '*') return 'eat'
-          if (!nextCellRight || nextCellRight === 'o') return 'crash'
-          if (nextCellRight === '.') return 'none'
-        }
-        break
-      }
+    const col = board[i].indexOf('@')
+    if (col !== -1) {
+      startRow = i
+      startCol = col
+      break
     }
   }
+
+  const [rowOffset, colOffset] = directions[mov]
+  const newRow = startRow + rowOffset
+  const newCol = startCol + colOffset
+
+  if (newRow < 0 || newRow >= board.length) {
+    return 'crash'
+  }
+
+  const targetCell = board[newRow][newCol]
+  if (targetCell === '*') return 'eat'
+  if (targetCell === 'o') return 'crash'
+  if (targetCell === '.') return 'none'
 
   return 'none'
 }
