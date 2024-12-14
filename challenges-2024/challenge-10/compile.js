@@ -18,7 +18,7 @@ export function compile(instructions) {
     if (!register_count.has(register)) {
       if (/^[A-Za-z]$/.test(register)) {
         register_count.set(register, 0)
-      } else if (!isNaN(register)) {
+      } else {
         register_count.set(value, Number(register))
       }
     }

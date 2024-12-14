@@ -43,6 +43,7 @@ npm run test
 |    7 	|   [El ataque del Grinch](https://adventjs.dev/es/challenges/2024/7)   	|      🟠      	|     [solución](/challenges-2024/challenge-07) |
 |    8 	|   [La carrera de renos](https://adventjs.dev/es/challenges/2024/8)   	|      🟢      	|     [solución](/challenges-2024/challenge-08) |
 |    9 	|   [El ataque del Grinch](https://adventjs.dev/es/challenges/2024/9)   	|      🟠      	|     [solución](/challenges-2024/challenge-09) |
+|    10 	|   [El ensamblador élfico](https://adventjs.dev/es/challenges/2024/10)   	|      🟠      	|     [solución](/challenges-2024/challenge-10) |
 
 
 ## 🎯 Retos 2023
