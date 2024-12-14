@@ -7,7 +7,6 @@ const instructions = [
 ]
 
 export function compile(instructions) {
-  // Code here
   const register_count = new Map()
 
   for (let i = 0; i < instructions.length; i++) {
@@ -15,55 +14,44 @@ export function compile(instructions) {
     const command = instruction[0]
     const register = instruction[1]
     const value = instruction[2]
-    // console.log({ command, register, value })
 
-    if (command === 'MOV') {
-      if (!isNaN(Number(register))) {
-        register_count.set(value, +register)
-      } else if (typeof register === 'string') {
-        register_count.set(register, value)
+    if (!register_count.has(register)) {
+      if (/^[A-Za-z]$/.test(register)) {
+        register_count.set(register, 0)
+      } else if (!isNaN(register)) {
+        register_count.set(value, Number(register))
       }
     }
 
-    console.log(register_count)
-    if (command === 'INC') {
-      console.log({ register })
-      if (register_count.has(register)) {
-        register_count.set(register, register_count.get(register) + 1)
+    if (command === 'MOV') {
+      if (register_count.has(register) && value === 'A') {
+        register_count.set('A', register_count.get(register))
+      } else {
+        register_count.set(value, +register)
       }
+    }
+
+    if (command === 'INC') {
+      register_count.set(register, register_count.get(register) + 1)
     }
 
     if (command === 'JMP') {
+      if (register_count.get(register) === 0) {
+        i = +value - 1
+        continue
+      }
     }
 
-    // else {
-    //   register_count.set(register, register_count.get(register) + 1)
-    // }
-
-    // switch (command) {
-    //   case 'MOV':
-    //     if (value === 'A') {
-    //       return i + 1
-    //     }
-    //     break
-    //   case 'INC':
-    //     if (register === 'C') {
-    //       return i + 1
-    //     }
-    //     break
-    //   case 'JMP':
-    //     if (register === 'C') {
-    //       return i + 1
-    //     }
-    //     break
-    //   default:
-    //     break
-    // }
+    if (command === 'DEC') {
+      register_count.set(register, register_count.get(register) - 1)
+    }
   }
-  return 0
+
+  return register_count.get('A') ?? undefined
 }
 
 const result = compile(instructions) // -> 2
+// const result = compile(['INC A', 'INC A', 'DEC A', 'MOV A B']) // -> 1
 
 console.log(result)
 
