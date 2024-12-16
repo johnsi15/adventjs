@@ -1,6 +1,9 @@
 export function decodeFilename(filename) {
-  // Code here
-  return ''
+  const [_, ...parts] = filename.split('_')
+
+  let result = parts.join('_')
+
+  return result.split('.').slice(0, -1).join('.')
 }
 
 const result = decodeFilename('2023122512345678_sleighDesign.png.grinchwa')
