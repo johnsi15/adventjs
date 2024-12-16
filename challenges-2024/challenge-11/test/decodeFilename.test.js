@@ -1,5 +1,5 @@
 import { decodeFilename } from '../decodeFilename'
-describe('First repeat gift', () => {
+describe('Files names', () => {
   test('Should return an string', () => {
     const result = decodeFilename('2023122512345678_sleighDesign.png.grinchwa')
 
