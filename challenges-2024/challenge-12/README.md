@@ -1,24 +1,26 @@
-# Reto #11: 🏴‍☠️ Nombres de archivos codificados
+# Reto #12: 💵 ¿Cuánto cuesta el árbol?
 
-El Grinch ha hackeado 🏴‍☠️ los sistemas del taller de Santa Claus y ha codificado los nombres de todos los archivos importantes. Ahora los elfos no pueden encontrar los archivos originales y necesitan tu ayuda para descifrar los nombres.
+Estás en un mercado muy especial en el que se venden árboles de Navidad 🎄. Cada uno viene decorado con una serie de adornos muy peculiares, y el precio del árbol se determina en función de los adornos que tiene.
 
-Cada archivo sigue este formato:
+- *: Copo de nieve - Valor: 1
+- o: Bola de Navidad - Valor: 5
+- ^: Arbolito decorativo - Valor: 10
+- #: Guirnalda brillante - Valor: 50
+- @: Estrella polar - Valor: 100
+Normalmente se sumarían todos los valores de los adornos y ya está…
 
-* Comienza con un número (puede contener cualquier cantidad de dígitos).
-* Luego tiene un guion bajo _.
-* Continúa con un nombre de archivo y su extensión.
-* Finaliza con una extensión extra al final (que no necesitamos).
-* Ten en cuenta que el nombre de los archivos pueden contener letras (a-z, A-Z), números (0-9), otros guiones bajos (_) y guiones (-).
-
-Tu tarea es implementar una función que reciba un string con el nombre de un archivo codificado y devuelva solo la parte importante: el nombre del archivo y su extensión.
+Pero, ¡ojo! Si un adorno se encuentra inmediatamente a la izquierda de otro de mayor valor, en lugar de sumar, se resta su valor.
 
 ```js
-decodeFilename('2023122512345678_sleighDesign.png.grinchwa')
-// ➞ "sleighDesign.png"
-
-decodeFilename('42_chimney_dimensions.pdf.hack2023')
-// ➞ "chimney_dimensions.pdf"
-
-decodeFilename('987654321_elf-roster.csv.tempfile')
-// ➞ "elf-roster.csv"
+calculatePrice('***')  // 3   (1 + 1 + 1)
+calculatePrice('*o')   // 4   (5 - 1)
+calculatePrice('o*')   // 6   (5 + 1)
+calculatePrice('*o*')  // 5  (-1 + 5 + 1) 
+calculatePrice('**o*') // 6  (1 - 1 + 5 + 1) 
+calculatePrice('o***') // 8   (5 + 3)
+calculatePrice('*o@')  // 94  (-5 - 1 + 100)
+calculatePrice('*#')   // 49  (-1 + 50)
+calculatePrice('@@@')  // 300 (100 + 100 + 100)
+calculatePrice('#@')   // 50  (-50 + 100)
+calculatePrice('#@Z')  // undefined (Z es desconocido)
 ```
