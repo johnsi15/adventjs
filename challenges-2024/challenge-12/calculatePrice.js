@@ -11,13 +11,16 @@ export function calculatePrice(ornaments) {
 
   for (let i = 0; i < ornaments.length; i++) {
     const ornament = ornaments[i]
-    if (prices[ornament] === undefined) return undefined
+    const currentPrice = prices[ornament]
+
+    if (currentPrice === undefined) return undefined
 
     const prevOrnament = ornaments[i - 1]
-    const currentPrice = prices[ornament]
     const prevPrice = prices[prevOrnament]
 
-    if (prevOrnament && prices[ornament] > prices[prevOrnament]) {
+    console.log({ prevPrice, prevOrnament, currentPrice })
+
+    if (currentPrice > prevPrice) {
       result += currentPrice - 2 * prevPrice
     } else {
       result += currentPrice
@@ -27,5 +30,5 @@ export function calculatePrice(ornaments) {
   return result
 }
 
-const result = calculatePrice('#@Z')
+const result = calculatePrice('***')
 console.log(result)
