@@ -1,18 +1,21 @@
-export function minMovesToStables(reindeer, stables) {
-  const stablesSort = stables.sort((a, b) => a - b)
-  const reindeerSort = reindeer.sort((a, b) => a - b)
+export function drawTable(data) {
+  const line = `+${'-'.repeat(10)}+${'-'.repeat(10)}+`
+  const keys = Object.keys(data[0])
+  const headerKeys = keys.map(key => `| ${key.charAt(0).toUpperCase()}${key.padEnd(9).slice(1)}`).join('') + '|'
+  const header = `${line}\n${headerKeys}\n${line}`
+  const body = data
+    .map(row => {
+      return keys.map(key => `| ${row[key].padEnd(9)}`).join('') + '|'
+    })
+    .join('\n')
 
-  let result = 0
-
-  for (let i = 0; i < reindeer.length; i++) {
-    const rein = reindeerSort[i]
-    const stable = stablesSort[i]
-
-    result += Math.abs(rein - stable)
-  }
-
-  return result
+  return `${header}\n${body}\n${line}`
 }
 
-const result = minMovesToStables([1, 1, 3], [1, 8, 4])
-console.log({ result })
+const result = drawTable([
+  { name: 'Alice', city: 'London' },
+  { name: 'Bob', city: 'Paris' },
+  { name: 'Charlie', city: 'New York' },
+])
+
+console.log(result)
