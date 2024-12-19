@@ -1,15 +1,34 @@
 export function drawTable(data) {
-  const line = `+${'-'.repeat(10)}+${'-'.repeat(10)}+`
+  function toUpperCase(input) {
+    const firstLetter = input.charAt(0).toUpperCase()
+    return firstLetter + input.slice(1)
+  }
+
   const keys = Object.keys(data[0])
-  const headerKeys = keys.map(key => `| ${key.charAt(0).toUpperCase()}${key.padEnd(9).slice(1)}`).join('') + '|'
-  const header = `${line}\n${headerKeys}\n${line}`
-  const body = data
+  const columnLengths = keys.map(key => key.length)
+
+  const rows = data.map(row => {
+    return keys.map((key, index) => {
+      const value = row[key].toString()
+      columnLengths[index] = Math.max(columnLengths[index], value.length)
+      return value
+    })
+  })
+
+  const line = `+-${columnLengths.map(length => '-'.repeat(length)).join('-+-')}-+`
+  const header = `| ${keys
+    .map((key, index) => {
+      return toUpperCase(key).padEnd(columnLengths[index])
+    })
+    .join(' | ')} |`
+
+  const body = rows
     .map(row => {
-      return keys.map(key => `| ${row[key].padEnd(9)}`).join('') + '|'
+      return `| ${row.map((value, index) => value.padEnd(columnLengths[index])).join(' | ')} |`
     })
     .join('\n')
 
-  return `${header}\n${body}\n${line}`
+  return `${line}\n${header}\n${line}\n${body}\n${line}`
 }
 
 const result = drawTable([
