@@ -1,14 +1,17 @@
 export function removeSnow(s) {
-  for (let i = 0; i < s.length; i++) {
-    const prev = s[i - 1]
-    const curr = s[i]
+  let result = s
 
-    if (prev === curr) {
-      return removeSnow(s.slice(0, i - 1) + s.slice(i + 1))
+  for (let i = 0; i < result.length; i++) {
+    const curr = result[i]
+    const next = result[i + 1]
+
+    if (curr === next) {
+      result = result.slice(0, i) + result.slice(i + 2)
+      i = -1
     }
   }
 
-  return s
+  return result
 }
 
 const result = removeSnow('zxxzoz') // -> "oz"
