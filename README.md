@@ -48,6 +48,7 @@ npm run test
 |    12 	|   [¿Cuánto cuesta el árbol?](https://adventjs.dev/es/challenges/2024/12)   	|      🟢      	|     [solución](/challenges-2024/challenge-12) |
 |    14 	|   [Acomodando los renos](https://adventjs.dev/es/challenges/2024/14)   	|      🟢      	|     [solución](/challenges-2024/challenge-14) |
 |    15 	|   [Dibujando tablas](https://adventjs.dev/es/challenges/2024/15)   	|      🟢      	|     [solución](/challenges-2024/challenge-15) |
+|    16 	|   [Limpiando la nieve del camino](https://adventjs.dev/es/challenges/2024/16)   	|      🟢      	|     [solución](/challenges-2024/challenge-16) |
 
 
 ## 🎯 Retos 2023
