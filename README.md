@@ -45,6 +45,9 @@ npm run test
 |    9 	|   [El ataque del Grinch](https://adventjs.dev/es/challenges/2024/9)   	|      🟠      	|     [solución](/challenges-2024/challenge-09) |
 |    10 	|   [El ensamblador élfico](https://adventjs.dev/es/challenges/2024/10)   	|      🟠      	|     [solución](/challenges-2024/challenge-10) |
 |    11 	|   [Nombres de archivos codificados](https://adventjs.dev/es/challenges/2024/11)   	|      🟢      	|     [solución](/challenges-2024/challenge-11) |
+|    12 	|   [¿Cuánto cuesta el árbol?](https://adventjs.dev/es/challenges/2024/12)   	|      🟢      	|     [solución](/challenges-2024/challenge-12) |
+|    14 	|   [Acomodando los renos](https://adventjs.dev/es/challenges/2024/14)   	|      🟢      	|     [solución](/challenges-2024/challenge-14) |
+|    15 	|   [Dibujando tablas](https://adventjs.dev/es/challenges/2024/15)   	|      🟢      	|     [solución](/challenges-2024/challenge-15) |
 
 
 ## 🎯 Retos 2023
