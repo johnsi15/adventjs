@@ -12,6 +12,7 @@ export function detectBombs(grid) {
       const isBorderRight = j === grid[i].length - 1
 
       if (isBorderTop && isBorderLeft) {
+        // next, bottom, diagonal
         // const crr = grid[i][j]
         const next = grid[i][j + 1]
         const bottom = grid[i + 1][j]
@@ -20,6 +21,7 @@ export function detectBombs(grid) {
         let count = [next, bottom, diagonal].filter(Boolean).length
         counts.push(count)
       } else if (isBorderTop && isBorderRight) {
+        // prev, bottom, diagonal
         // const crr = grid[i][j]
         const prev = grid[i][j - 1]
         const bottom = grid[i + 1][j]
@@ -28,6 +30,7 @@ export function detectBombs(grid) {
         let count = [prev, bottom, diagonal].filter(Boolean).length
         counts.push(count)
       } else if (isBorderBottom && isBorderLeft) {
+        // next, top, diagonal
         // const crr = grid[i][j]
         const next = grid[i][j + 1]
         const top = grid[i - 1][j]
@@ -36,20 +39,27 @@ export function detectBombs(grid) {
         let count = [next, top, diagonal].filter(Boolean).length
         counts.push(count)
       } else if (isBorderTop) {
+        // next, prev, bottom, diagonal, diagonalTop
         // const crr = grid[i][j]
         const prev = grid[i][j - 1]
         const next = grid[i][j + 1]
-        const diagonal = grid[i - 1][j - 1]
+        console.log(grid[i + 1][j - 1]) // diagonal left
+        console.log(grid[i + 1][j + 1]) // diagonal right
+        const diagonalLeft = grid[i + 1][j - 1]
+        const diagonalRight = grid[i + 1][j + 1]
 
-        let count = [prev, next, diagonal].filter(Boolean).length
+        let count = [prev, next, diagonalLeft, diagonalRight].filter(Boolean).length
         counts.push(count)
       } else if (isBorderBottom) {
+        // next, prev, top, diagonal, diagonalBottom
         // const crr = grid[i][j]
+        const top = grid[i - 1][j]
         const prev = grid[i][j - 1]
         const next = grid[i][j + 1]
         const diagonal = grid[i - 1][j + 1]
+        const diagonalBottom = grid[i - 1][j - 1]
 
-        let count = [prev, next, diagonal].filter(Boolean).length
+        let count = [top, prev, next, diagonal, diagonalBottom].filter(Boolean).length
         counts.push(count)
       } else if (isBorderLeft) {
         // const crr = grid[i][j]
@@ -87,7 +97,9 @@ export function detectBombs(grid) {
         ).length
         counts.push(count)
       }
-      break
+      // if (j == 1) {
+      //   break
+      // }
     }
     console.log(counts)
 
