@@ -8,7 +8,7 @@ describe('Files names', () => {
     ])
 
     expect(result).toBeDefined()
-    expect(result).toBe([
+    expect(result).toEqual([
       [1, 2, 1],
       [2, 1, 1],
       [1, 1, 1],
