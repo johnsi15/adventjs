@@ -43,26 +43,18 @@ export function isRobotBack(moves) {
       }
     }
 
-    if (step === 'R' && diff) {
-      ejes[0] = ejes[0] + 1
-    }
-
-    if (step === 'L' && diff) {
-      ejes[0] = ejes[0] - 1
-    }
-
-    if (step === 'U' && diff) {
-      ejes[1] = ejes[1] + 1
-    }
-
-    if (step === 'D' && diff) {
-      ejes[1] = ejes[1] - 1
+    if (diff) {
+      if (step === 'R' || step === 'U') {
+        ejes[movesDictionary[step]] += 1
+      } else if (step === 'L' || step === 'D') {
+        ejes[movesDictionary[step]] -= 1
+      }
     }
   }
 
   return ejes.some(eje => eje > 0 || eje < 0) ? ejes : true
 }
 
-const result = isRobotBack('U?D?U')
+const result = isRobotBack('*RU')
 
 console.log(result)
