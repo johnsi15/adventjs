@@ -1,5 +1,4 @@
 export function isRobotBack(moves) {
-  // Code here
   const modifiedMoves = {
     '*': 1,
     L: 'R',
@@ -18,13 +17,13 @@ export function isRobotBack(moves) {
   const ejes = [0, 0]
 
   const steps = moves.split('')
+  const stepsHistory = new Set()
 
+  let diff = true
   for (let i = 0; i < steps.length; i++) {
     const step = steps[i]
     let stepNext = steps[i + 1]
-
-    // const especialStep = modifiedMoves[step]
-    // console.log({ especialStep })
+    stepsHistory.add(step)
 
     if (step === '*') {
       ejes[movesDictionary[stepNext]] = ejes[movesDictionary[stepNext]] + 1
@@ -34,19 +33,29 @@ export function isRobotBack(moves) {
       steps[i + 1] = modifiedMoves[stepNext]
     }
 
-    if (step === 'R') {
+    if (step === '?') {
+      const nextStep = steps[i + 1]
+
+      if (stepsHistory.has(nextStep)) {
+        diff = false
+      } else {
+        diff = true
+      }
+    }
+
+    if (step === 'R' && diff) {
       ejes[0] = ejes[0] + 1
     }
 
-    if (step === 'L') {
+    if (step === 'L' && diff) {
       ejes[0] = ejes[0] - 1
     }
 
-    if (step === 'U') {
+    if (step === 'U' && diff) {
       ejes[1] = ejes[1] + 1
     }
 
-    if (step === 'D') {
+    if (step === 'D' && diff) {
       ejes[1] = ejes[1] - 1
     }
   }
@@ -54,6 +63,6 @@ export function isRobotBack(moves) {
   return ejes.some(eje => eje > 0 || eje < 0) ? ejes : true
 }
 
-const result = isRobotBack('LLL!R')
+const result = isRobotBack('U?D?U')
 
 console.log(result)
