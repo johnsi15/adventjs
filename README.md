@@ -46,6 +46,7 @@ npm run test
 |    10 	|   [El ensamblador élfico](https://adventjs.dev/es/challenges/2024/10)   	|      🟠      	|     [solución](/challenges-2024/challenge-10) |
 |    11 	|   [Nombres de archivos codificados](https://adventjs.dev/es/challenges/2024/11)   	|      🟢      	|     [solución](/challenges-2024/challenge-11) |
 |    12 	|   [¿Cuánto cuesta el árbol?](https://adventjs.dev/es/challenges/2024/12)   	|      🟢      	|     [solución](/challenges-2024/challenge-12) |
+|    13 	|   [¿El robot está de vuelta?](https://adventjs.dev/es/challenges/2024/13)   	|      🔴      	|     [solución](/challenges-2024/challenge-13) |
 |    14 	|   [Acomodando los renos](https://adventjs.dev/es/challenges/2024/14)   	|      🟢      	|     [solución](/challenges-2024/challenge-14) |
 |    15 	|   [Dibujando tablas](https://adventjs.dev/es/challenges/2024/15)   	|      🟢      	|     [solución](/challenges-2024/challenge-15) |
 |    16 	|   [Limpiando la nieve del camino](https://adventjs.dev/es/challenges/2024/16)   	|      🟢      	|     [solución](/challenges-2024/challenge-16) |
