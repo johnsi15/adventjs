@@ -52,6 +52,7 @@ npm run test
 |    16 	|   [Limpiando la nieve del camino](https://adventjs.dev/es/challenges/2024/16)   	|      🟢      	|     [solución](/challenges-2024/challenge-16) |
 |    17 	|   [Busca las bombas del Grinch](https://adventjs.dev/es/challenges/2024/17)   	|      🟠      	|     [solución](/challenges-2024/challenge-17) |
 |    18 	|   [La agenda mágica de Santa](https://adventjs.dev/es/challenges/2024/18)   	|      🔴      	|     [solución](/challenges-2024/challenge-18) |
+|    20 	|   [La agenda mágica de Santa](https://adventjs.dev/es/challenges/2024/20)   	|      🟢     	|     [solución](/challenges-2024/challenge-20) |
 
 
 ## 🎯 Retos 2023
