@@ -2,11 +2,7 @@ export function fixGiftList(received, expected) {
   const receivedCount = new Map()
 
   received.forEach(item => {
-    if (receivedCount.has(item)) {
-      receivedCount.set(item, receivedCount.get(item) + 1)
-    } else {
-      receivedCount.set(item, 1)
-    }
+    receivedCount.set(item, (receivedCount.get(item) || 0) + 1)
   })
 
   const missing = {}
