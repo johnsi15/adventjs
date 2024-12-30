@@ -1,31 +1,19 @@
 export function generateGiftSets(gifts) {
   const result = []
-  const stack = [{ path: [gifts[0]], used: Array(gifts.length).fill(false) }]
-
-  gifts.forEach(item => {
-    result.push([item])
-  })
-
-  console.log(result)
+  const stack = [{ combination: [], start: 0 }]
 
   while (stack.length > 0) {
-    const { path, used } = stack.pop()
+    const { combination, start } = stack.shift()
 
-    result.push(path)
-    // if (path.length === gifts.length) {
-    //   result.push(path)
-    //   continue
-    // }
+    if (combination.length > 0) {
+      result.push([...combination])
+    }
 
-    for (let i = 0; i < gifts.length; i++) {
-      if (used[i]) continue
-
-      const newPath = [gifts[i]]
-      const newUsed = [...used]
-
-      newUsed[i] = true
-
-      stack.push({ path: newPath, used: newUsed })
+    for (let i = start; i < gifts.length; i++) {
+      stack.push({
+        combination: [...combination, gifts[i]],
+        start: i + 1,
+      })
     }
   }
 
