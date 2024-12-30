@@ -54,6 +54,7 @@ npm run test
 |    18 	|   [La agenda mágica de Santa](https://adventjs.dev/es/challenges/2024/18)   	|      🔴      	|     [solución](/challenges-2024/challenge-18) |
 |    20 	|   [La agenda mágica de Santa](https://adventjs.dev/es/challenges/2024/20)   	|      🟢     	|     [solución](/challenges-2024/challenge-20) |
 |    21 	|   [Calcula la altura del árbol de Navidad](https://adventjs.dev/es/challenges/2024/21)   	|      🟢     	|     [solución](/challenges-2024/challenge-21) |
+|    22 	|   [Genera combinaciones de regalos](https://adventjs.dev/es/challenges/2024/22)   	|      🟠     	|     [solución](/challenges-2024/challenge-22) |
 
 
 ## 🎯 Retos 2023
