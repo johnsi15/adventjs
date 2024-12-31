@@ -1,7 +1,7 @@
 import { generateGiftSets } from '../generateGiftSets'
 describe('Challenge 22', () => {
   test('Should return an array', () => {
-    const expect = [
+    const expectResult = [
       ['car'],
       ['doll'],
       ['puzzle'],
@@ -14,6 +14,6 @@ describe('Challenge 22', () => {
     const result = generateGiftSets(['car', 'doll', 'puzzle'])
 
     expect(result).toBeDefined()
-    expect(result).toEqual(expect)
+    expect(result).toEqual(expectResult)
   })
 })
