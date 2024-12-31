@@ -1,12 +1,7 @@
 export function findMissingNumbers(nums) {
   const max = Math.max(...nums)
-  const newNums = Array.from({ length: max }, (_, index) => index + 1)
-  const result = []
 
-  newNums.forEach(num => {
-    const isFound = nums.find(item => item === num)
-    if (!isFound) result.push(num)
-  })
+  const result = Array.from({ length: max }, (_, index) => index + 1).filter(num => !nums.includes(num))
 
   return result
 }
