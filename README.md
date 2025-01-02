@@ -56,6 +56,7 @@ npm run test
 |    21 	|   [Calcula la altura del árbol de Navidad](https://adventjs.dev/es/challenges/2024/21)   	|      🟢     	|     [solución](/challenges-2024/challenge-21) |
 |    22 	|   [Genera combinaciones de regalos](https://adventjs.dev/es/challenges/2024/22)   	|      🟠     	|     [solución](/challenges-2024/challenge-22) |
 |    23 	|   [Encuentra los números perdidos](https://adventjs.dev/es/challenges/2024/23)   	|      🟢     	|     [solución](/challenges-2024/challenge-23) |
+|    24 	|   [Verifica si los árboles son espejos mágicos](https://adventjs.dev/es/challenges/2024/24)   	|      🟠     	|     [solución](/challenges-2024/challenge-24) |
 
 
 ## 🎯 Retos 2023
